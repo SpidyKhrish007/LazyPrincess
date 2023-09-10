@@ -14,7 +14,7 @@ def is_enabled(value, default):
 SESSION = getenv('SESSION', 'Media_search')
 API_ID = int(getenv('API_ID', '23830477'))
 API_HASH = getenv('API_HASH', '19f8365d98fb11c9cd6c1eaa8b1fa4b8')
-BOT_TOKEN = getenv('BOT_TOKEN', '6384094059:AAEpXeEB5KdvmMjfQn8VlTlKtCsTsyPOq4g')
+BOT_TOKEN = getenv('BOT_TOKEN', '6384094059:AAEQfOQylmboJWVOmTWI1KVb75mGtTI9eCo')
 
 # Bot settings
 CACHE_TIME = int(getenv('CACHE_TIME', 300))
