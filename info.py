@@ -11,14 +11,14 @@ def is_enabled(value, default):
         return default
 
 # Bot information
-SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ('API_ID', '23830477'))
-API_HASH = environ('API_HASH', '19f8365d98fb11c9cd6c1eaa8b1fa4b8')
-BOT_TOKEN = environ('BOT_TOKEN', '6384094059:AAEpXeEB5KdvmMjfQn8VlTlKtCsTsyPOq4g')
+SESSION = getenv('SESSION', 'Media_search')
+API_ID = int(getenv('API_ID', '23830477'))
+API_HASH = getenv('API_HASH', '19f8365d98fb11c9cd6c1eaa8b1fa4b8')
+BOT_TOKEN = getenv('BOT_TOKEN', '6384094059:AAEpXeEB5KdvmMjfQn8VlTlKtCsTsyPOq4g')
 
 # Bot settings
-CACHE_TIME = int(environ.get('CACHE_TIME', 300))
-USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
+CACHE_TIME = int(getenv('CACHE_TIME', 300))
+USE_CAPTION_FILTER = bool(getenv('USE_CAPTION_FILTER', False))
 PICS = [
     "https://telegra.ph/file/451a9169cb4bca927080f.jpg",
     "https://telegra.ph/file/9fc8c8de06567f8ae2c2b.jpg",
